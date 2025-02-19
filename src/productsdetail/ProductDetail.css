@@ -1,0 +1,121 @@
+
+.divshin {
+    display: flex;
+    width: 70%;
+    margin: 50px auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    background-color: #1f1f1f;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.divshin:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+
+
+.divishin2 {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 20px;
+    align-items: center;
+    background-color: #121212;
+    border-radius: 15px;
+    color: #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease-in-out;
+}
+
+.divishin2:hover {
+    transform: scale(1.05);
+    background-color: #3700b3;
+    color: #fff;
+    box-shadow: 0 0 15px #6200ea;
+}
+
+
+.divsin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#imggin {
+    padding: 20px;
+    border: 2px solid #3700b3;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#imggin:hover {
+    transform: scale(1.1);
+    background-color: #3700b3;
+    box-shadow: 0 0 15px #bb86fc;
+}
+
+
+h4 {
+    width: 500px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 500;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #bb86fc;
+    }
+
+    50% {
+        box-shadow: 0 0 20px #bb86fc;
+    }
+
+    100% {
+        box-shadow: 0 0 5px #bb86fc;
+    }
+}
+
+.divishin2.glow {
+    animation: glow 1.5s infinite alternate;
+}
+
+
+@media (max-width: 768px) {
+    .divshin {
+        flex-direction: column;
+        padding: 20px;
+        width: 90%;
+    }
+
+    .divishin2 {
+        width: 100%;
+    }
+
+    h4 {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
