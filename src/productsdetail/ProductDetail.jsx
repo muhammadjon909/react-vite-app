@@ -1,7 +1,5 @@
-
 import { useEffect, useState, useMemo } from 'react';
 import { useParams } from 'react-router-dom';
-
 import './ProductDetail.css';
 
 function ProductDetail() {
@@ -17,11 +15,11 @@ function ProductDetail() {
   const productDetails = useMemo(() => {
     if (!product) return <h1>Loading...</h1>;
     return (
-      <div className="divsin">
-        <h1>{product.title}</h1>
-        <div className="divshin">
-          <img id="imggin" src={product.thumbnail} alt={product.title} />
-          <div className="divishin2">
+      <div className="product-container">
+        <h1 className="product-title">{product.title}</h1>
+        <div className="product-content">
+          <img className="product-image" src={product.thumbnail} alt={product.title} />
+          <div className="product-details">
             <h4>{product.description}</h4>
             <p>Price: ${product.price}</p>
             <p>Rating: {product.rating}</p>
